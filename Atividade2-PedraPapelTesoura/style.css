@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background: #000000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+h1 {
+    color: #000000;
+    margin-bottom: 15px;
+    font-size: 2.5em;
+}
+.instrucoes {
+    color: #666;
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+.botoes-opcoes {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+.botao-opcao {
+    background: #000000;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 1em;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.botao-opcao:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+}
+.botao-opcao:active {
+    transform: scale(0.95);
+}
+.resultado {
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.resultado.vitoria {
+    background-color: #d4edda;
+    color: #155724;
+    border: 2px solid #28a745;
+}
+.resultado.derrota {
+    background-color: #f8d7da;
+    color: #721c24;
+    border: 2px solid #f5c6cb;
+}
+.resultado.empate {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 2px solid #ffc107;
+}
